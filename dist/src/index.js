@@ -1,64 +1,19 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.verifyToken = exports.signToken = void 0;
-const jwt = __importStar(require("jsonwebtoken"));
-exports.signToken = (payload, secret, options) => {
-    return new Promise((resolve, reject) => {
-        const args = [
-            payload,
-            secret,
-            (error, encoded) => {
-                if (error) {
-                    reject(error);
-                }
-                else {
-                    resolve(encoded);
-                }
-            }
-        ];
-        if (options !== undefined) {
-            args.splice(2, 0, secret);
-        }
-        jwt.sign(...args);
-    });
-};
-exports.verifyToken = (token, secret, options) => {
-    return new Promise((resolve, reject) => {
-        const args = [
-            token,
-            secret,
-            (error, decoded) => {
-                if (error) {
-                    reject(error);
-                }
-                else {
-                    resolve(decoded);
-                }
-            }
-        ];
-        if (options !== undefined) {
-            args.splice(2, 0, secret);
-        }
-        jwt.verify(...args);
-    });
-};
+exports.toWords = exports.toUpperFirst = exports.toTitleCase = exports.getUtcIsoString = exports.findDuplicates = exports.escapeRegExp = void 0;
+const escapeRegExp_1 = __importDefault(require("./escapeRegExp"));
+exports.escapeRegExp = escapeRegExp_1.default;
+const findDuplicates_1 = __importDefault(require("./findDuplicates"));
+exports.findDuplicates = findDuplicates_1.default;
+const getUtcIsoString_1 = __importDefault(require("./getUtcIsoString"));
+exports.getUtcIsoString = getUtcIsoString_1.default;
+const toTitleCase_1 = __importDefault(require("./toTitleCase"));
+exports.toTitleCase = toTitleCase_1.default;
+const toUpperFirst_1 = __importDefault(require("./toUpperFirst"));
+exports.toUpperFirst = toUpperFirst_1.default;
+const toWords_1 = __importDefault(require("./toWords"));
+exports.toWords = toWords_1.default;
 //# sourceMappingURL=index.js.map
