@@ -1,5 +1,5 @@
-import { strictEqual } from 'assert'
 import getUtcIsoString from '../src/getUtcIsoString'
+import { strictEqual } from 'assert'
 
 strictEqual(
   getUtcIsoString(new Date('Sun Feb 01 1998 00:05:06 GMT+0200')),

@@ -1,5 +1,5 @@
-import { strictEqual } from 'assert'
 import escapeRegExp from '../src/escapeRegExp'
+import { strictEqual } from 'assert'
 
 strictEqual(
   escapeRegExp('^foo.bar$'),
