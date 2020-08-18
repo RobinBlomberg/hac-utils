@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const eachIn_1 = __importDefault(require("../src/eachIn"));
 const assert_1 = require("assert");
 const output = [];
-eachIn_1.default({ baz: 'qux', foo: 'bar' }, (key, value, index) => {
+eachIn_1.default({ baz: 'qux', foo: 'bar' }, (key, value) => {
     output.push(`${key}: ${value}`);
 });
 assert_1.strictEqual(output.includes('baz: qux'), true);
