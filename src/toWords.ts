@@ -4,6 +4,6 @@ const ALPHA_RANGE = '\u0041-\u005A\u0061-\u007A\u00AA\u00B5\u00BA\u00C0-\u00D6\u
 const NUM_RANGE = '0-9'
 const ALPHANUM_WORD_RGX = new RegExp(`[${ALPHA_RANGE}${NUM_RANGE}]+`, 'g')
 
-export default (string: string): string[] => {
-  return string.match(ALPHANUM_WORD_RGX) || []
+export default (string: unknown): string[] => {
+  return String(string).match(ALPHANUM_WORD_RGX) || []
 }
