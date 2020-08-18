@@ -1,10 +1,11 @@
 {
   "name": "hac-utils",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "HiQ Ace Creative",
   "main": "./dist/src/index.js",
   "typings": "./src/index.ts",
   "scripts": {
+    "build": "tsc",
     "test": "tsc --project ./tsconfig.test.json && node ./dist/test/index.js",
     "test-dev": "tsc-watch --project ./tsconfig.test.json --onSuccess \"node ./dist/test/index.js\""
   },
