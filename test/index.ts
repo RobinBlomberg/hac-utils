@@ -1,3 +1,4 @@
+import './eachIn'
 import './escapeRegExp'
 import './findDuplicates'
 import './getUtcIsoString'
