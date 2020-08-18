@@ -1,6 +1,6 @@
-export default (
-  object: Record<string, unknown>,
-  func: (key: string, value?: unknown, index?: number) => void
+export default <T extends Record<string, unknown>>(
+  object: T,
+  func: (key: string, value: T[keyof T], index: number) => void
 ) => {
   let index = 0
 

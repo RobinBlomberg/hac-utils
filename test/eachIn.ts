@@ -3,7 +3,7 @@ import { strictEqual } from 'assert'
 
 const output: string[] = []
 
-eachIn({ baz: 'qux', foo: 'bar' }, (key, value, index) => {
+eachIn({ baz: 'qux', foo: 'bar' }, (key, value) => {
   output.push(`${key}: ${value}`)
 })
 
