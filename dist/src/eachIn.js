@@ -4,7 +4,10 @@ exports.default = (object, func) => {
     let index = 0;
     for (const key in object) {
         if (Object.prototype.hasOwnProperty.call(object, key)) {
-            func(key, object[key], index);
+            const returnee = func(key, object[key], index);
+            if (returnee !== undefined && !returnee) {
+                break;
+            }
             index++;
         }
     }

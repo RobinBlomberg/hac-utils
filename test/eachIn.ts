@@ -16,4 +16,17 @@ strictEqual(
   true
 )
 
+// It should support early breaking:
+let iterationCount = 0
+
+eachIn({ baz: 'qux', foo: 'bar' }, (key, value) => {
+  iterationCount++
+  return false
+})
+
+strictEqual(
+  iterationCount,
+  1
+)
+
 console.log('\u001b[32m✓ Test "eachIn" passed.\u001b[39m')
