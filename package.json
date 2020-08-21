@@ -1,6 +1,6 @@
 {
   "name": "hac-utils",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "author": "HiQ Ace Creative",
   "main": "./dist/src/index.js",
   "typings": "./src/index.ts",
