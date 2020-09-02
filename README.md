@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm install https://bitbucket.org/nkpgSaberRiders/hacutils
+npm install @robinblomberg/hac-utils
 ```
 
 ## Usage

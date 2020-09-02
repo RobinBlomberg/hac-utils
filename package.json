@@ -1,6 +1,6 @@
 {
-  "name": "hac-utils",
-  "version": "0.3.0",
+  "name": "@robinblomberg/hac-utils",
+  "version": "0.4.0",
   "author": "HiQ Ace Creative",
   "main": "./dist/src/index.js",
   "typings": "./src/index.ts",
@@ -10,9 +10,23 @@
     "test-dev": "tsc-watch --project ./tsconfig.test.json --onSuccess \"node ./dist/test/index.js\""
   },
   "devDependencies": {
+    "@robinblomberg/eslint-config-hac-eslint": "^0.3.0",
     "@types/node": "^14.0.27",
-    "eslint-config-hac-eslint": "git+https://bitbucket.org/nkpgSaberRiders/haceslint.git",
     "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"
-  }
+  },
+  "description": "```\r npm install @robinblomberg/hac-utils\r ```",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinBlomberg/hac-utils.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobinBlomberg/hac-utils/issues"
+  },
+  "homepage": "https://github.com/RobinBlomberg/hac-utils#readme"
 }
