@@ -1,5 +1,5 @@
 import { deepStrictEqual } from 'assert'
-import findDuplicates from '../src/findDuplicates'
+import { findDuplicates } from '../src'
 
 deepStrictEqual(
   findDuplicates(['foo', 'bar', 'baz', 'bar', 'qux', 'foo', 'hej']),

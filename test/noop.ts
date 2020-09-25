@@ -1,4 +1,4 @@
-import noop from '../src/noop'
+import { noop } from '../src'
 import { strictEqual } from 'assert'
 
 strictEqual(

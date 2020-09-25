@@ -1,4 +1,4 @@
-import getUtcIsoString from '../src/getUtcIsoString'
+import { getUtcIsoString } from '../src'
 import { strictEqual } from 'assert'
 
 strictEqual(

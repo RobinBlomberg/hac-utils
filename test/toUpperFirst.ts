@@ -1,5 +1,5 @@
 import { strictEqual } from 'assert'
-import toUpperFirst from '../src/toUpperFirst'
+import { toUpperFirst } from '../src'
 
 strictEqual(
   toUpperFirst('fooBar'),

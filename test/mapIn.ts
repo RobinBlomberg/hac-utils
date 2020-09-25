@@ -1,5 +1,5 @@
-import mapIn from '../src/mapIn'
 import { deepStrictEqual } from 'assert'
+import { mapIn } from '../src'
 
 deepStrictEqual(
   mapIn({ abc: 100, def: 42 }, (value) => value * 2),

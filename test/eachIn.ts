@@ -1,4 +1,4 @@
-import eachIn from '../src/eachIn'
+import { eachIn } from '../src'
 import { strictEqual } from 'assert'
 
 const output: string[] = []

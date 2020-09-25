@@ -2,6 +2,7 @@ import eachIn from './eachIn'
 import escapeRegExp from './escapeRegExp'
 import findDuplicates from './findDuplicates'
 import getUtcIsoString from './getUtcIsoString'
+import mapIn from './mapIn'
 import noop from './noop'
 import toTitleCase from './toTitleCase'
 import toUpperFirst from './toUpperFirst'
@@ -12,6 +13,7 @@ export {
   escapeRegExp,
   findDuplicates,
   getUtcIsoString,
+  mapIn,
   noop,
   toTitleCase,
   toUpperFirst,

@@ -1,4 +1,4 @@
-import escapeRegExp from '../src/escapeRegExp'
+import { escapeRegExp } from '../src'
 import { strictEqual } from 'assert'
 
 strictEqual(

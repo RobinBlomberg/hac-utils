@@ -1,5 +1,5 @@
 import { deepStrictEqual } from 'assert'
-import toWords from '../src/toWords'
+import { toWords } from '../src'
 
 deepStrictEqual(
   toWords(' foo bar, bAz.  56  '),

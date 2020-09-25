@@ -1,5 +1,5 @@
 import { strictEqual } from 'assert'
-import toTitleCase from '../src/toTitleCase'
+import { toTitleCase } from '../src'
 
 strictEqual(
   toTitleCase(' foo bar, bAz.  56  '),
