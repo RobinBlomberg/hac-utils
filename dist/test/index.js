@@ -4,6 +4,7 @@ require("./eachIn");
 require("./escapeRegExp");
 require("./findDuplicates");
 require("./getUtcIsoString");
+require("./mapIn");
 require("./noop");
 require("./toWords");
 require("./toUpperFirst");

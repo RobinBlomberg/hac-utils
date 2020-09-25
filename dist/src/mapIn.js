@@ -1,15 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = (object, func) => {
+    const output = {};
     let index = 0;
     for (const key in object) {
         if (Object.prototype.hasOwnProperty.call(object, key)) {
-            const returnee = func(key, object[key], index);
-            if (returnee !== undefined && !returnee) {
-                break;
-            }
+            output[key] = func(object[key], key, index);
             index++;
         }
     }
+    return output;
 };
-//# sourceMappingURL=eachIn.js.map
+//# sourceMappingURL=mapIn.js.map

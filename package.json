@@ -1,6 +1,6 @@
 {
   "name": "@robinblomberg/hac-utils",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": "HiQ Ace Creative",
   "main": "./dist/src/index.js",
   "typings": "./src/index.ts",
