@@ -2,7 +2,7 @@ import { deepStrictEqual } from 'assert'
 import { mapIn } from '../src'
 
 deepStrictEqual(
-  mapIn({ abc: 100, def: 42 }, (value) => value * 2),
+  mapIn({ abc: 100, def: 42 }, (key, value) => value * 2),
   { abc: 200, def: 84 }
 )
 

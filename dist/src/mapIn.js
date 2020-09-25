@@ -5,7 +5,7 @@ exports.default = (object, func) => {
     let index = 0;
     for (const key in object) {
         if (Object.prototype.hasOwnProperty.call(object, key)) {
-            output[key] = func(object[key], key, index);
+            output[key] = func(key, object[key], index);
             index++;
         }
     }
